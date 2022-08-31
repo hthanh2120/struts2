@@ -9,6 +9,7 @@
         <title>Order <s:property value="id" /></title>
     </head>
     <body>
+    <s:if >
         <s:url id="saveurl" value="/order/save"/>
         <s:form method="post" action="%{saveurl}">
             <table>
@@ -23,6 +24,7 @@
                     </td>
             </table>
         </s:form>
+    </s:if>
         <a href="<%=request.getContextPath()%>/orders">Back to Orders</a>
     </body>
 </html>
