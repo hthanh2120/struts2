@@ -1,9 +1,10 @@
 package com.thanhnh.model;
 
+import com.opensymphony.xwork2.ActionSupport;
 import lombok.Data;
 
 @Data
-public class Order {
+public class Order extends ActionSupport {
 
     String id;
     String clientName;

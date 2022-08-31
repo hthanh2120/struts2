@@ -14,8 +14,9 @@
             <table>
                 <s:hidden name="order.id"/>
                 <s:textfield name="order.id" label="ID" disabled="true"/>
-                <s:textfield name="order.clientName" label="Client"/>
-                <s:textfield name="order.amount" label="Amount" />
+                <s:fielderror fieldName="name"/>
+                <s:textfield name="clientNameRequired" label="Client"/>
+                <s:textfield name="amountRequired" label="Amount" />
                 <tr>
                     <td colspan="2">
                         <s:submit />

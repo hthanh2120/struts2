@@ -61,10 +61,4 @@ public class OrderAction extends ActionSupport {
         }
         return SUCCESS;
     }
-
-    public void validate() {
-        if (StringUtils.isEmpty(order.getClientName())) {
-            addFieldError("clientName", "Field name required");
-        }
-    }
 }
